@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>todolist</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="todolist">
+            <h1 class="title">TO DO LIST</h1>
+            <div class="add-box">
+                <input class="add-list" id="add-list" type="text" placeholder= "新增任務內容">
+                <button type="button" id="btn-add" class="btn-add fas fa-plus" value="send"></button>
+            </div>
+            <hr>
+            <span class="list-sum">目前有 <span id="listCount">0</span> 筆任務</span>
+            <ul class="list-group" id="todoList"></ul>
+            <div class="delete-box">
+                <input type="button" id="delete-all" class="delete-all" value="清除紀錄">
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/all.js"></script>
+</body>
+</html>

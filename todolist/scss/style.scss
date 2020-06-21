@@ -1,0 +1,138 @@
+$bgcolor: #23d4c3;
+$tdcolor: #fbfafa;
+$f-family: Microsoft JhengHei;
+
+@mixin btn-style{
+    border: none;
+    box-shadow: 0 0 3px #615d5d;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+body{
+    background-color: $bgcolor;
+}
+.container{
+    margin: 2em auto 0 auto;
+    width: 350px;    
+    background-color: $tdcolor;
+    box-shadow: 0 0 5px #2b2f2d;
+    border-radius: 3%;
+}
+.todolist{    
+    padding-top: .6em;
+    padding-bottom: 1em;
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    .title{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        letter-spacing: 1px;
+    }
+}
+.add-box{
+    .add-list{
+        padding: 5px;
+        border: none;
+        background-color: $tdcolor;
+        border-bottom: 2px solid #2b2929;
+        font-family: $f-family;
+    }
+}
+hr{
+    width: 90%;
+    margin: 1.2em 0;
+}
+.list-sum{
+    font-family: $f-family;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.list-group{
+    list-style: none;
+    width: 80%;
+    padding-left: 0;
+    li{
+        padding: 1em 0;
+        border-bottom: 1px solid #e3e3e3;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.btn-add{
+    @include btn-style;
+    padding: 10px;
+    background: #ef742c;
+    margin-left: 1em;        
+    &:hover{
+        box-shadow: 0 0 6px #615d5d;
+    }
+}
+.btn-del{
+    @include btn-style;
+    padding: 6px;
+    &:hover{
+        background: #ce3a3a;
+        color: aliceblue;
+        
+    }
+}
+.delete-all{
+    @include btn-style;
+    padding: 8px;
+    background: #585653ab;
+    letter-spacing: 2px;
+    font-family: $f-family;
+    font-weight: bold;
+    &:hover{
+        background: #9e9595;
+        box-shadow: 0 0 6px #1f1e1e;
+    }
+}
+
+// 刪除線
+input[type=checkbox]:checked+label {    
+    color: #AEB7C6;
+    text-decoration: line-through;
+}
+
+input[type="checkbox"] { 
+    display: none; 
+}
+
+input[type=checkbox] + label{
+    position: relative;
+    letter-spacing: 1px;
+    color: #2b2929;
+    font-size: 18px;
+    padding-left: 2.2em;
+    font-family: $f-family;
+}
+
+input[type="checkbox"] + label:before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #084058;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: .6;
+    -webkit-transition: all .12s, border-color .08s;
+    transition: all .12s, border-color .08s;
+}
+
+input[type="checkbox"]:checked + label:before {
+    width: 10px;
+    top: -5px;
+    left: 5px;
+    border-radius: 0;
+    opacity: 1;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
