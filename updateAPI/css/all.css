@@ -1,0 +1,99 @@
+.ls-1 {
+  letter-spacing: 1px; }
+
+.p-xy-0 {
+  padding: 0 !important; }
+
+.price-m-b {
+  margin-bottom: 3px; }
+
+body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: Microsoft JhengHei; }
+
+.ol-bg {
+  background-color: #eaeaea7a; }
+
+.breadcrumb-item a {
+  color: #e0490f; }
+
+.breadcrumb-item.active {
+  color: #676d6d; }
+
+.list-group-item {
+  letter-spacing: 1px; }
+  .list-group-item .list-btn {
+    display: block;
+    color: #000;
+    padding: 1em; }
+    .list-group-item .list-btn:hover {
+      text-decoration: none; }
+    .list-group-item .list-btn.active {
+      color: #fff; }
+  .list-group-item.active {
+    background-color: #2b948f !important;
+    border-color: #2b948f !important;
+    -webkit-box-shadow: 0 0 0 !important;
+    box-shadow: 0 0 0 !important; }
+  .list-group-item:hover {
+    -webkit-box-shadow: 0 0 5px inset #c0d4d3;
+    box-shadow: 0 0 5px inset #c0d4d3;
+    background-color: #f9fbfb; }
+
+.card-deck {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.card-flex {
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 1em 1em 1em;
+  border-radius: 1%;
+  overflow: hidden; }
+  .card-flex .item-img {
+    height: 250px;
+    background-position: center;
+    background-size: cover; }
+  .card-flex:hover {
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15) !important;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15) !important; }
+  .card-flex .origin-price-f {
+    font-size: 14px;
+    text-decoration: line-through;
+    color: #696262; }
+  .card-flex .price-color {
+    color: #e26021; }
+  .card-flex .card-footer {
+    padding: .75rem .95rem; }
+
+.btn-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .btn-flex .btn {
+    width: 100px;
+    padding-top: .5em;
+    padding-bottom: .5em; }
+  .btn-flex .btn-shopping, .btn-flex .btn-details {
+    color: #380606; }
+    .btn-flex .btn-shopping:hover, .btn-flex .btn-details:hover {
+      color: #fff; }
+  .btn-flex .btn-shopping {
+    background-color: #18bfa8; }
+    .btn-flex .btn-shopping:hover {
+      background-color: #19a09a; }
+  .btn-flex .btn-details {
+    background-color: #ea743bfa; }
+    .btn-flex .btn-details:hover {
+      background: #d26518; }

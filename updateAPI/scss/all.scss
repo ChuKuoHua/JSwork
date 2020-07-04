@@ -1,0 +1,107 @@
+$btnColor : #380606;
+$while : #fff;
+.ls-1{
+  letter-spacing: 1px;
+}
+.p-xy-0{
+  padding: 0 !important;
+}
+.price-m-b{
+  margin-bottom: 3px;
+}
+body{
+    box-sizing: border-box;
+    font-family: Microsoft JhengHei;
+}
+.ol-bg{
+  background-color: #eaeaea7a;
+}
+.breadcrumb-item{
+  a{
+    color: #e0490f;
+  }
+  &.active{
+    color: #676d6d;
+  }
+}
+.list-group-item{
+  letter-spacing: 1px;
+  .list-btn{
+    display: block;
+    color: #000;
+    padding: 1em;
+    &:hover{
+	    text-decoration: none;
+    }
+    &.active{
+       color: #fff;
+    }
+  }
+  &.active{
+    background-color: #2b948f !important;
+    border-color: #2b948f !important;
+    box-shadow: 0 0 0 !important;
+  }
+  &:hover{
+    box-shadow: 0 0 5px inset #c0d4d3;
+    background-color: #f9fbfb;
+  }
+}
+.card-deck{
+  justify-content: space-between;
+}
+.card-flex{
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 1em 1em 1em;
+  border-radius: 1%;
+  overflow: hidden;
+  .item-img{
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+  }  
+  &:hover{
+    box-shadow: 0 5px 10px rgba(0,0,0,.15)!important;
+  }
+  .origin-price-f{
+    font-size:14px;
+    text-decoration:line-through;
+    color: #696262;
+  }
+  .price-color{
+    color: #e26021;
+  }  
+  .card-footer{
+    padding: .75rem .95rem;
+  }
+}
+.btn-flex{
+  display: flex;
+  justify-content: space-between;
+  .btn{
+    width: 100px;
+    padding-top:.5em;
+    padding-bottom:.5em;
+  }
+  .btn-shopping,.btn-details{
+    color:$btnColor;
+      &:hover{
+        color: $while;
+      }
+  }
+  .btn-shopping{
+    background-color: #18bfa8;
+    &:hover{
+      background-color: #19a09a;
+    }
+  }
+  .btn-details{
+    background-color: #ea743bfa;
+    &:hover{
+      background: #d26518;
+    }
+  }
+}
+
